@@ -29,7 +29,7 @@ nav ul {
     align-items: center;
     list-style: none;
     color: white;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 nav a {
@@ -201,6 +201,14 @@ footer p {
 @media screen and (max-width: 475px) {
     nav ul {
         flex-direction: column;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li.show-on-small-screen {
+        display: block;
     }
 
     .full-width-section {
